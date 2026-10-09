@@ -1,0 +1,138 @@
+export const profile = {
+  name: 'Pankaj Rauniyar',
+  role: 'Frontend / Full-Stack Web Developer',
+  email: 'rauniyarpankaj6@gmail.com',
+  phone: '+91 77094 47731',
+  linkedin: 'https://www.linkedin.com/in/pankaj-rauniyar-7a8741327/',
+  github: 'https://github.com/PANKAJ-RAUNIYAR-6',
+};
+
+export const skills = [
+  { name: 'HTML5', level: 92, group: 'Frontend' },
+  { name: 'CSS3', level: 90, group: 'Frontend' },
+  { name: 'JavaScript', level: 78, group: 'Frontend' },
+  { name: 'Bootstrap', level: 88, group: 'Frontend' },
+  { name: 'React.js', level: 62, group: 'Frontend' },
+  { name: 'Material UI (MUI)', level: 78, group: 'Frontend' },
+
+  { name: 'Node.js', level: 76, group: 'Backend' },
+  { name: 'Express.js', level: 74, group: 'Backend' },
+  { name: 'EJS', level: 72, group: 'Backend' },
+  { name: 'REST APIs', level: 82, group: 'Backend' },
+
+  { name: 'MongoDB', level: 78, group: 'Database' },
+  { name: 'MySQL', level: 74, group: 'Database' },
+  { name: 'MongoB Atlas', level: 84, group: 'Database' },
+
+  { name: 'Git', level: 82, group: 'Tools' },
+  { name: 'GitHub', level: 82, group: 'Tools' },
+  { name: 'Cloudinary', level: 72, group: 'Tools' },
+  { name: 'Render', level: 85, group: 'Tools' },
+];
+
+export const projects = [
+  {
+    title: 'FindIt - Lost & Found Portal',
+    tag: 'Full Stack',
+    number: '01',
+    desc: 'A full-stack Lost & Found platform where users can report lost and found items, browse and search listings, manage item reports, and connect lost belongings with their owners. Includes user authentication, category-based listings, and an admin dashboard.',
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB Atlas', 'Socket.IO', 'JWT', 'Cloudinary', 'Mapbox', 'Mapbox Geocoding'],
+    icon: '🔎',
+    live: 'https://lostandfoundwebsite-z73d.onrender.com/',
+    code: 'https://github.com/PANKAJ-RAUNIYAR-6/LostAndFoundWebsite',
+    featured: true,
+  },
+  {
+    title: 'OptiStock - Inventory Management System',
+    tag: 'Full Stack',
+    number: '02',
+    desc: 'A full-stack inventory management system powered by MongoDB Atlas, featuring Admin authentication configured through environment variables and registration for Staff and Inventory Manager roles. Includes product, category, supplier, purchase order, and POS management, automated stock tracking, low-stock alerts, analytics dashboards, sales and profit reports, inventory valuation, and PDF/Excel exports.',
+    tech: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'MongoDB Atlas',
+      'Mongoose',
+      'JWT',
+      'jsPDF',
+      'SheetJS (XLSX)'
+    ],
+    icon: '📊',
+    live: 'https://inventorymanagementsystemweb.onrender.com/',
+    code: 'https://github.com/PANKAJ-RAUNIYAR-6/InventoryManagementSystemWeb',
+    featured: true,
+  },
+  {
+    title: 'WanderLust',
+    tag: 'Full Stack',
+    number: '03',
+    desc: 'Travel listing platform with authentication, CRUD listings, reviews, search and interactive map features.',
+    tech: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'EJS',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'MongoDB Atlas',
+      'Passport.js',
+      'Express Session',
+      'Mapbox',
+      'Mapbox Geocoding',
+      'EJS Mate',
+      'Connect-Mongo',
+      'Connect-Flash',
+      'Method-Override'
+    ],
+    icon: '🧭',
+    live: 'https://fullstack-project-wonderlist.onrender.com',
+    code: 'https://github.com/PANKAJ-RAUNIYAR-6/WonderLust_Fullstack',
+    featured: true,
+  },
+  {
+    title: 'Cafe Bite',
+    tag: 'Frontend',
+    number: '04',
+    desc: 'Responsive cafe landing page with modern UI, menu presentation and reservation interaction.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    icon: '☕',
+    live: 'https://lovely-seahorse-34e579.netlify.app',
+    code: 'https://github.com/PANKAJ-RAUNIYAR-6/Cafe-Bite.git',
+  },
+  {
+    title: 'React Weather App',
+    tag: 'Frontend',
+    number: '05',
+    desc: 'A responsive weather application that fetches real-time weather data for any city using a Weather API. Displays temperature, humidity, feels-like temperature, and min/max temperatures, with dynamic backgrounds and weather card images that adapt to current conditions. Includes search error handling and a mobile-friendly interface.',
+    tech: [
+      'HTML5',
+      'CSS3',
+      'JavaScript',
+      'React.js',
+      'Weather API',
+      'Axios'
+    ], 
+    icon: '🌦️',
+    live: 'https://heartfelt-mochi-fe7a1b.netlify.app/',
+    code: 'https://github.com/PANKAJ-RAUNIYAR-6/react-weather-app',
+  },
+  {
+    title: 'Simon Says Game',
+    tag: 'JavaScript',
+    number: '06',
+    desc: 'Memory game with keyboard start, level progression, high-score tracking and game-over states.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    icon: '🧠',
+    live: 'https://tubular-brioche-3d01e7.netlify.app/',
+    code: 'https://github.com/PANKAJ-RAUNIYAR-6/SIMON-SAY-GAME',
+  },
+];
+
+export const certifications = [
+  { title: 'React Basics', provider: 'Scaler Topics', type: 'React.js' },
+  { title: 'Full Stack Web Development', provider: 'Apna College', type: 'Full Stack Development' },
+];
