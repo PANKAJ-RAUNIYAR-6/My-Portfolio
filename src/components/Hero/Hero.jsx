@@ -91,7 +91,7 @@ export default function Hero() {
             <div className="portrait">
               <span>PR</span>
               <small>
-                WEB
+                SOFTWARE
                 <br />
                 DEVELOPER
               </small>
