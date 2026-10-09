@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio showcasing my projects, technical skills, and journey as a Frontend Developer.
 
-## 🌐 Live Demo
+## 🌐 Live Portfolio
 
 🚀 **Live Website:** [View My Portfolio]( https://my-portfolio-73nw.onrender.com)
 
