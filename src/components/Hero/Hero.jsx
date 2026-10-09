@@ -125,7 +125,7 @@ export default function Hero() {
               <span> name:</span> <b>"Pankaj"</b>,
               <br />
               <span> focus:</span>{" "}
-              <b>"Web Development"</b>,
+              <b>"Software Development"</b>,
               <br />
               <span> stack:</span> [
               <b>"React", "Node"</b>]
