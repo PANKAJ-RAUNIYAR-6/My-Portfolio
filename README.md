@@ -4,7 +4,7 @@ A modern, responsive personal portfolio showcasing my projects, technical skills
 
 ## 🌐 Live Demo
 
-🚀 **Live Website:** [View My Portfolio](YOUR_RENDER_LIVE_URL)
+🚀 **Live Website:** [View My Portfolio]( https://my-portfolio-73nw.onrender.com)
 
 ## 👨‍💻 About Me
 
