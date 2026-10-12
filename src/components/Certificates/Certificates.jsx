@@ -1,10 +1,12 @@
 
-import { ArrowUpRight, BadgeCheck, Sparkles } from "lucide-react";
 import { certifications } from "../../data/portfolio";
 import "./Certificates.css";
+import { useState } from "react";
+import { ArrowUpRight, BadgeCheck, Sparkles, X } from "lucide-react";
 
 export default function Certificates() {
   // No certificates = don't show the section
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
   if (!certifications || certifications.length === 0) {
     return null;
   }
@@ -54,12 +56,14 @@ export default function Certificates() {
             </div>
 
             {/* Contact Link */}
-            <a
-              href="#contact"
-              aria-label={`Contact for ${c.title} certificate`}
-            >
-              <ArrowUpRight />
-            </a>
+                     <button
+  type="button"
+  className="cert-view-btn"
+  aria-label={`View ${c.title} certificate`}
+  onClick={() => setSelectedCertificate(c)}
+>
+  <ArrowUpRight />
+</button>
           </article>
         ))}
 
@@ -79,6 +83,34 @@ export default function Certificates() {
           </div>
         </div>
       </div>
+
+      {selectedCertificate && (
+  <div
+    className="certificate-modal"
+    onClick={() => setSelectedCertificate(null)}
+  >
+    <div
+      className="certificate-modal-content"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        type="button"
+        className="certificate-modal-close"
+        onClick={() => setSelectedCertificate(null)}
+        aria-label="Close certificate"
+      >
+        <X />
+      </button>
+
+      <h3>{selectedCertificate.title}</h3>
+
+      <img
+        src={selectedCertificate.image}
+        alt={selectedCertificate.title}
+      />
+    </div>
+  </div>
+)}
     </section>
   );
 }

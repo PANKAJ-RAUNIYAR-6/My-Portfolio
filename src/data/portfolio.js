@@ -24,10 +24,11 @@ export const skills = [
   { name: 'MySQL', level: 74, group: 'Database' },
   { name: 'MongoB Atlas', level: 84, group: 'Database' },
 
-  { name: 'Git', level: 82, group: 'Tools' },
-  { name: 'GitHub', level: 82, group: 'Tools' },
-  { name: 'Cloudinary', level: 72, group: 'Tools' },
-  { name: 'Render', level: 85, group: 'Tools' },
+  { name: 'Git & GitHub', level: 82, group: 'Tools & Technology' },
+  { name: 'Cloudinary', level: 72, group: 'Tools & Technology' },
+  { name: 'Render', level: 85, group: 'Tools & Technology' },
+  { name: 'MySQL Workbench', level: 74, group: 'Tools & Technology' },
+  { name: 'VS Code', level: 84, group: 'Tools & Technology' },
 ];
 
 export const projects = [
@@ -38,6 +39,8 @@ export const projects = [
     desc: 'A full-stack Lost & Found platform where users can report lost and found items, browse and search listings, manage item reports, and connect lost belongings with their owners. Includes user authentication, category-based listings, and an admin dashboard.',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB Atlas', 'Socket.IO', 'JWT', 'Cloudinary', 'Mapbox', 'Mapbox Geocoding'],
     icon: '🔎',
+    // FindIt
+    image: "/images/FindIt-home.png",
     live: 'https://lostandfoundwebsite-z73d.onrender.com/',
     code: 'https://github.com/PANKAJ-RAUNIYAR-6/LostAndFoundWebsite',
     featured: true,
@@ -61,6 +64,9 @@ export const projects = [
       'SheetJS (XLSX)'
     ],
     icon: '📊',
+    // OptiStock
+    image: "/images/OptiStock-home.png",
+
     live: 'https://inventorymanagementsystemweb.onrender.com/',
     code: 'https://github.com/PANKAJ-RAUNIYAR-6/InventoryManagementSystemWeb',
     featured: true,
@@ -89,6 +95,9 @@ export const projects = [
       'Method-Override'
     ],
     icon: '🧭',
+    // WanderLust
+    image: "/images/WonderLust-home.png",
+
     live: 'https://fullstack-project-wonderlist.onrender.com',
     code: 'https://github.com/PANKAJ-RAUNIYAR-6/WonderLust_Fullstack',
     featured: true,
@@ -100,6 +109,9 @@ export const projects = [
     desc: 'Responsive cafe landing page with modern UI, menu presentation and reservation interaction.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     icon: '☕',
+    // Cafe Bite
+    image: "/images/CafeBite-home.png",
+
     live: 'https://lovely-seahorse-34e579.netlify.app',
     code: 'https://github.com/PANKAJ-RAUNIYAR-6/Cafe-Bite.git',
   },
@@ -115,8 +127,11 @@ export const projects = [
       'React.js',
       'Weather API',
       'Axios'
-    ], 
+    ],
     icon: '🌦️',
+    // React Weather App
+    image: "/images/Weather-home.png",
+
     live: 'https://heartfelt-mochi-fe7a1b.netlify.app/',
     code: 'https://github.com/PANKAJ-RAUNIYAR-6/react-weather-app',
   },
@@ -127,12 +142,25 @@ export const projects = [
     desc: 'Memory game with keyboard start, level progression, high-score tracking and game-over states.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     icon: '🧠',
+    // Simon Says Game
+    image: "/images/SimOn Says-home.png",
     live: 'https://tubular-brioche-3d01e7.netlify.app/',
     code: 'https://github.com/PANKAJ-RAUNIYAR-6/SIMON-SAY-GAME',
   },
 ];
 
 export const certifications = [
-  { title: 'React Basics', provider: 'Scaler Topics', type: 'React.js' },
-  { title: 'Full Stack Web Development', provider: 'Apna College', type: 'Full Stack Development' },
+  { 
+    title: 'React Basics', 
+    provider: 'Scaler Topics',
+    type: 'React.js',
+    image: "/certificates/React Js Free Certificate.png"
+
+  },
+  { 
+    title: 'Full Stack Web Development', 
+    provider: 'Apna College', 
+    type: 'Full Stack Development',
+    image: "/certificates/FullStach Web Development Certificates.png"
+  },
 ];

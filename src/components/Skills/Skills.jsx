@@ -1,7 +1,45 @@
 import { Code2, Database, GitBranch, Layers3, Server, Sparkles } from 'lucide-react';
 import { skills } from '../../data/portfolio';
 import './Skills.css';
-const icons = { Frontend: Layers3, Backend: Server, Database: Database, Tools: GitBranch };
+import {
+    FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact,
+    FaNodeJs, FaGitAlt, FaGithub, FaCloud,
+    FaCode, FaServer
+} from "react-icons/fa";
+
+import {
+    SiMui, SiExpress, SiEjs, SiMongodb, SiMysql,
+    SiMongodb as SiMongoAtlas, SiRender, SiMysql as SiMySQLWorkbench,
+    SiCloudinary, SiPostman
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+
+
+const skillIcons = {
+    HTML5: FaHtml5,
+    CSS3: FaCss3Alt,
+    JavaScript: FaJs,
+    Bootstrap: FaBootstrap,
+    "React.js": FaReact,
+    "Material UI (MUI)": SiMui,
+
+    "Node.js": FaNodeJs,
+    "Express.js": SiExpress,
+    EJS: SiEjs,
+    "REST APIs": SiPostman,
+
+    MongoDB: SiMongodb,
+    MySQL: SiMysql,
+    "MongoB Atlas": SiMongodb,
+
+    "Git & GitHub": FaGithub,
+    Cloudinary: SiCloudinary,
+    Render: SiRender,
+    "MySQL Workbench": SiMysql,
+    "VS Code": VscVscode,
+};
+
+const icons = { Frontend: Layers3, Backend: Server, Database: Database, 'Tools & Technology': GitBranch };
 export default function Skills() {
     return (
         <section className="section skills" id="skills">
@@ -30,7 +68,7 @@ export default function Skills() {
                 </div>
             </div>
             <div className="skills-grid">
-                {['Frontend', 'Backend', 'Database', 'Tools'].map(group => {
+                {['Frontend', 'Backend', 'Database', 'Tools & Technology'].map(group => {
                     const Icon = icons[group];
                     return (
                         <div className="skill-group reveal"
@@ -46,9 +84,15 @@ export default function Skills() {
                                     <div className="skill-row"
                                         key={s.name}>
                                         <div>
-                                            <b>
+
+                                            <b className="skill-name">
+                                                {(() => {
+                                                    const SkillIcon = skillIcons[s.name];
+                                                    return SkillIcon ? <SkillIcon className="skill-icon" /> : null;
+                                                })()}
                                                 {s.name}
                                             </b>
+
                                             <span>
                                                 {s.level}%
                                             </span>

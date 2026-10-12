@@ -1,8 +1,11 @@
+
 import {
   ArrowDown,
   ArrowUpRight,
   Mail,
   Sparkles,
+  Download,
+  Contact,
 } from "lucide-react";
 
 import {
@@ -53,9 +56,20 @@ export default function Hero() {
 
             <a
               className="secondary"
-              href="mailto:rauniyarpankaj6@gmail.com"
+              href="#contact"
             >
+              <Contact size={18} />
               Contact me
+            </a>
+
+            <a
+              className="primary"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Download size={18} />
+              View Resume
             </a>
           </div>
 
@@ -87,15 +101,13 @@ export default function Hero() {
         </div>
 
         <div className="hero-visual reveal">
-          <div className="portrait-ring">
-            <div className="portrait">
-              <span>PR</span>
-              <small>
-                SOFTWARE
-                <br />
-                DEVELOPER
-              </small>
-            </div>
+
+          <div className="portrait-card">
+            <img
+              src="/pankaj3.jpeg"
+              alt="Pankaj Rauniyar"
+              className="portrait-image"
+            />
           </div>
 
           <div className="orbit orbit-one" />
@@ -122,7 +134,8 @@ export default function Hero() {
             <code>
               <em>const</em> developer = {"{"}
               <br />
-              <span> name:</span> <b>"Pankaj"</b>,
+              <span> name:</span>{" "}
+              <b>"Pankaj Rauniyar"</b>,
               <br />
               <span> focus:</span>{" "}
               <b>"Software Development"</b>,
@@ -138,17 +151,18 @@ export default function Hero() {
               build • learn • ship
             </div>
           </div>
+
         </div>
-      </div>
 
-      <div className="hero-bottom">
-        <span>SCROLL TO EXPLORE</span>
+        <div className="hero-bottom">
+          <span>SCROLL TO EXPLORE</span>
 
-        <a href="#about">
-          <ArrowDown />
-        </a>
+          <a href="#about">
+            <ArrowDown />
+          </a>
 
-        <div />
+          <div />
+        </div>
       </div>
     </section>
   );
